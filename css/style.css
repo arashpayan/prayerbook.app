@@ -1,21 +1,102 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.badge {
+    height: 60px;
+    width: auto;
+}
+
+.bgyellow {
+    background: yellow;
 }
 
 body {
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    padding: 0;
+    margin: 0;
+    color: rgb(108, 117, 125);
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+button {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 24px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    height: 48px;
+    min-width: 250px;
+    margin: 16px;
 }
 
-[class*="col-"] {
+button:hover {
+    background-color: orange;
+}
+
+#download-section {
+    text-align: center;
+    background-color: orange;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: black;
+    justify-content: center;
+}
+
+.feature {
     width: 100%;
-    float: left;
-    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature > p {
+    max-width: 250px;
+    /* text-align: center; */
+}
+
+#features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#features-headers {
+    text-align: center;
+}
+
+.gradient-bg {
+    /* background: linear-gradient(to right, #7db9e8 0%,#1e5799 100%); */
+    /* background: linear-gradient(to right, #dc2430 0%,#7b4397 100%); */
+    background: url("/images/bg-pattern.png"), linear-gradient(to right, #dc2430 0%,#7b4397 100%);
+    /* background-image: ; */
+}
+
+#header-text {
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+hr {
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: rgba(34, 34, 34, 0.1);
+}
+
+.horizontalize {
+    display: flex;
+    flex-direction: row;
 }
 
 img {
@@ -29,34 +110,23 @@ img {
     justify-content: center;
 }
 
-.bgyellow {
-    background: yellow;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-#download-section {
-    text-align: center;
-}
-
-hr {
-    max-width: 100px;
-    margin: 25px auto 0;
-    border-width: 1px;
-    border-color: rgba(34, 34, 34, 0.1)
-}
-
-#features-headers {
-    text-align: center;
-}
-
-#features {
+.verticalize {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.feature {
+[class*="col-"] {
     width: 100%;
-    text-align: center;
+    float: left;
+    padding: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,12 +143,9 @@ hr {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
-    body {
-        background-color: green;
-    }
-
     .feature {
         width: 50%;
+        padding: 16px;
     }
 }
 
