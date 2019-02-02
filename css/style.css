@@ -32,12 +32,12 @@ button {
 }
 
 button:hover {
-    background-color: orange;
+    background-color: #ffc325;
 }
 
 #download-section {
     text-align: center;
-    background-color: orange;
+    background-color: #ffc325;
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -71,10 +71,7 @@ button:hover {
 }
 
 .gradient-bg {
-    /* background: linear-gradient(to right, #7db9e8 0%,#1e5799 100%); */
-    /* background: linear-gradient(to right, #dc2430 0%,#7b4397 100%); */
-    background: url("/images/bg-pattern.png"), linear-gradient(to right, #dc2430 0%,#7b4397 100%);
-    /* background-image: ; */
+    background: url("/images/bg-pattern.png"), linear-gradient(to right, #003d6b 0%,#001840 100%);
 }
 
 #header-text {
