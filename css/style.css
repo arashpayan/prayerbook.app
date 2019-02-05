@@ -76,6 +76,18 @@ button:hover {
     padding: 16px;
 }
 
+#quote-text {
+    color: white;
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+#citation-text {
+    color: #dddddd;
+    text-align: end;
+    margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Condensed', sans-serif;
 }
